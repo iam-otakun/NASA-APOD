@@ -73,9 +73,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         service.start()
 
-        if launchedAsLoginItem == false {
-            showSettings()
-        }
+        // Silent launch (2.0.1, Fred's call): starting the app —
+        // manually or as a login item — only puts the icon in the
+        // menu bar. Settings appears when the user asks for it:
+        // from the menu, by reopening the running app, or when a
+        // duplicate launch asks this instance to show itself.
 
         Task {
             await AppUpdateManager.checkForUpdate()

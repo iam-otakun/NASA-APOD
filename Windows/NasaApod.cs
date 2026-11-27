@@ -44,7 +44,7 @@ using Microsoft.Win32;
 
 [assembly: AssemblyTitle("NasaApod")]
 [assembly: AssemblyProduct("NASA APOD for Windows")]
-[assembly: AssemblyVersion("2.0.0.0")]
+[assembly: AssemblyVersion("2.0.1.0")]
 [assembly: AssemblyFileVersion("1.1.0.0")]
 
 namespace NasaApod
